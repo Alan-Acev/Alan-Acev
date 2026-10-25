@@ -82,11 +82,23 @@ use only; not affiliated with TikTok or WhatsApp.</sub>
 
 ## Featured project: WorkoutTracker
 
+<img src="assets/workouttracker-logo.png" width="72" align="left" alt="WorkoutTracker logo">
+
 **A dark-themed workout logger for Android, with a custom native module so rest-timer notifications keep
 ticking reliably in the background.** Built with Expo/React Native and a hand-written Kotlin module that
 talks directly to Android's alarm and battery-optimization APIs.
 
-<!-- screenshots: add to assets/ as workouttracker-*.jpg, then reference here -->
+<br clear="left">
+
+![WorkoutTracker: log screen, saved sessions, history and an in-progress workout](assets/workouttracker-log.jpg)
+
+<table>
+<tr>
+<td align="center"><img src="assets/workouttracker-sessions.jpg" width="220" alt="Settings and saved sessions screen"><br><sub>Sessions & settings</sub></td>
+<td align="center"><img src="assets/workouttracker-history.jpg" width="220" alt="Workout history screen"><br><sub>History</sub></td>
+<td align="center"><img src="assets/workouttracker-workout.jpg" width="220" alt="In-progress workout with rest timers"><br><sub>Mid-workout, rest timers running</sub></td>
+</tr>
+</table>
 
 ### What I built
 
