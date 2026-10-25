@@ -80,6 +80,12 @@ flowchart LR
 <sub>The Tik2Stick repository is private, and for personal
 use only; not affiliated with TikTok or WhatsApp.</sub>
 
+<br>
+
+---
+
+<br>
+
 ## Featured project: WorkoutTracker
 
 <img src="assets/workouttracker-logo.png" width="72" align="left" alt="WorkoutTracker logo">
