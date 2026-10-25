@@ -1,6 +1,14 @@
 # Hey, I'm Alan Acevedo
 
-<!-- Optional: one or two lines about you, e.g. what you study or work on, what you're looking for, and how to reach you. -->
+I'm a Computer Science student at **UT Arlington** (B.S. with a Cyber Security Certificate, graduating
+December 2026, 3.83 GPA) and I'm **CompTIA Security+** certified. I'm interested in cybersecurity and
+software engineering, and I like building tools for problems I actually have. The projects below are apps
+I use myself, built with the help of AI coding assistants.
+
+**Looking for:** entry-level cybersecurity or software roles starting January 2027, in the DFW area or
+anywhere I can relocate. I'm fluent in English and Spanish.
+
+[LinkedIn](https://www.linkedin.com/in/alanacevedoo) · [alanacevedohdz@gmail.com](mailto:alanacevedohdz@gmail.com)
 
 ## Featured project: Tik2Stick
 
