@@ -79,3 +79,38 @@ flowchart LR
 
 <sub>The Tik2Stick repository is private, and for personal
 use only; not affiliated with TikTok or WhatsApp.</sub>
+
+## Featured project: WorkoutTracker
+
+**A dark-themed workout logger for Android, with a custom native module so rest-timer notifications keep
+ticking reliably in the background.** Built with Expo/React Native and a hand-written Kotlin module that
+talks directly to Android's alarm and battery-optimization APIs.
+
+<!-- screenshots: add to assets/ as workouttracker-*.jpg, then reference here -->
+
+### What I built
+
+- **Workout logging (TypeScript, Expo Router, AsyncStorage).**
+  - Session-based log: exercises, sets, reps and weight, with kg/lb unit support.
+  - Session history with per-session detail views.
+  - Export a workout to a text file via the share sheet.
+- **Native Android rest-timer module (Kotlin, Expo Modules API).**
+  - A real OS-level chronometer notification that counts down to an end time independent of the JS
+    thread, so it survives the app being backgrounded or killed.
+  - Direct handling of Android's exact-alarm and battery-optimization restrictions (`AlarmManager`,
+    `PowerManager`) — neither is granted automatically just because the manifest declares the permission.
+  - One-tap deep links into the system's "Alarms & reminders" and "Ignore battery optimizations" screens.
+  - An in-app reliability banner that surfaces when either setting would silently delay or drop a
+    scheduled timer.
+- **UI/UX.** Custom dark theme and JetBrains Mono typography, shake animation when a rest timer hits zero
+  (Reanimated), haptics.
+
+### Tech
+
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![React Native](https://img.shields.io/badge/React%20Native-20232A?logo=react&logoColor=61DAFB)
+![Expo](https://img.shields.io/badge/Expo-000020?logo=expo&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=white)
+
+<sub>The WorkoutTracker repository is private, and for personal use only.</sub>
