@@ -90,7 +90,7 @@ talks directly to Android's alarm and battery-optimization APIs.
 
 <br clear="left">
 
-![WorkoutTracker: log screen, saved sessions, history and an in-progress workout](assets/workouttracker-log.jpg)
+<img src="assets/workouttracker-log.jpg" width="280" alt="WorkoutTracker: log screen, saved sessions, history and an in-progress workout">
 
 <table>
 <tr>
