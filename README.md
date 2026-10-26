@@ -25,7 +25,7 @@ WhatsApp sticker packs. No cloud, no paid services, no third-party sticker-maker
 <td>
 
 **Chrome side panel.** Scans the TikTok conversation you open, previews the animated stickers, flags
-duplicates, and exports a ZIP or sends it to the phone.
+duplicates, and exports a ZIP or finds the phone on your Wi-Fi and sends the stickers there.
 
 **WhatsApp.** Packs are installed through WhatsApp's official sticker-pack flow and animate when sent.
 
@@ -45,6 +45,9 @@ duplicates, and exports a ZIP or sends it to the phone.
   - Sticker library with animated previews.
   - Packs: automatic splitting into 3–30 stickers per pack, and WhatsApp's ContentProvider integration.
 - **Secure local Wi-Fi transfer.**
+  - **Automatic device discovery:** the extension's **Find Devices** locates the phone, with no IP address to
+    type. Chrome extensions have no mDNS API, so the app answers mDNS for `tik2stick.local` (plus a standard
+    DNS-SD service), which the operating system resolves for the browser.
   - A dependency-free HTTP/1.1 receiver that runs only while its screen is open.
   - One-time pairing code with lockout, plus "Allow this computer?" approval on the phone.
   - Expiring 256-bit session tokens.
@@ -59,7 +62,9 @@ duplicates, and exports a ZIP or sends it to the phone.
 - **65 stickers** from Chrome to the phone and imported in **≈14 s**, auto-split into packs of 22 / 22 / 21.
 - **109 end-to-end transfers, 0 failures**, including duplicate re-sends and transfers interrupted on either
   side.
-- **130+ automated tests**:
+- **Automatic discovery verified on real devices (21/21 checks)**: found without typing an address, found
+  again after the phone's receiver restarts or its Wi-Fi reconnects, and gone once the phone stops receiving.
+- **145+ automated tests**:
   - native converter (CTest);
   - Android unit tests and on-device tests;
   - extension unit tests;
@@ -71,7 +76,7 @@ duplicates, and exports a ZIP or sends it to the phone.
 ```mermaid
 flowchart LR
     T["TikTok Web<br/>conversation"] -->|"sticker images"| E["Chrome extension<br/>select · verify · ZIP"]
-    E -->|"ZIP over local Wi-Fi<br/>(paired, checksummed)"| A["Android app<br/>convert → 512×512 WebP"]
+    E -->|"finds the phone (mDNS)<br/>ZIP over local Wi-Fi<br/>(paired, checksummed)"| A["Android app<br/>convert → 512×512 WebP"]
     A -->|"sticker packs"| W["WhatsApp"]
 ```
 
