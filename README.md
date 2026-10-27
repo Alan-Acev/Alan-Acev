@@ -99,6 +99,61 @@ use only; not affiliated with TikTok or WhatsApp.</sub>
 
 <br>
 
+## Featured project: ByteBuddi
+
+**A free web platform where UTA students build resumes, check them against job postings, and practice
+interviews with an AI chatbot.** Live at [bytebuddi.com](https://bytebuddi.com). Built as my Senior Design
+project with a team of six, Fall 2025 to Spring 2026.
+
+![ByteBuddi home page](assets/bytebuddi-home.png)
+
+<table>
+<tr>
+<td align="center"><img src="assets/bytebuddi-gallery.png" width="420" alt="ByteBuddi resume template gallery"><br><sub>Resume template gallery</sub></td>
+<td align="center"><img src="assets/bytebuddi-interviewer.png" width="420" alt="ByteBuddi AI interviewer chat"><br><sub>AI interviewer chat</sub></td>
+</tr>
+</table>
+
+### What the team built
+
+- **Resume builder.** Live preview while you type, built-in templates, and PDF download.
+- **ATS keyword checker.** Compares a resume to a job description and scores it for editing.
+- **AI interviewer.** A chatbot that practices interview questions for engineering roles.
+- **Accounts.** Login and authentication through Firebase.
+
+### What I built
+
+- **AI interviewer (Google Gemini 2.5 Flash API).** Integrated the Gemini API into the chatbot and wrote its
+  prompts with role context, so it generates role-specific interview questions.
+- **Home page front end (React).** Built the landing page shown above.
+- Worked to the team's security requirements: OWASP practices, and no storage of users' chatbot conversations.
+
+### How it works
+
+```mermaid
+flowchart LR
+    S["Student<br/>(browser)"] --> R["React app"]
+    R --> N["Node.js / Express<br/>services"]
+    N --> F["Firebase<br/>Auth · Firestore · Hosting"]
+    N --> G["Gemini 2.5 Flash<br/>AI interviewer"]
+```
+
+### Tech
+
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)
+![Gemini API](https://img.shields.io/badge/Gemini%20API-8E75B2?logo=googlegemini&logoColor=white)
+
+<sub>Senior Design project at the University of Texas at Arlington, built with a team of six.</sub>
+
+<br>
+
+---
+
+<br>
+
 ## Featured project: WorkoutTracker
 
 <img src="assets/workouttracker-logo.png" width="72" align="left" alt="WorkoutTracker logo">
